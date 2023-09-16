@@ -1,0 +1,52 @@
+nav {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.nav-icons {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: 4rem;
+}
+
+.nav-icons:hover{
+  color: blue;
+  width: 24px;
+  height: 24px;
+}
+
+
+.nav-icons-last{
+  margin-left: 23rem;
+}
+
+
+.search-input {
+  width: 70%;
+  height: 2.8rem;
+  background: #f5f5f5;
+  outline: none;
+  border: 2px solid black;
+  border-radius: 2.625rem;
+  padding: 30px;
+  font-size: 1.1rem;
+  margin-left: 10rem;
+  margin-top: 34px;
+  margin-bottom: 45px;
+ 
+}
+
+
+#searchQuerySubmit {
+  width: 20px;
+  height: 20px;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+#searchQuerySubmit:hover {
+  cursor: pointer;
+}
