@@ -10,7 +10,7 @@ const Nav = ({ handleInputChange, query }) => {
     <nav>
       <div className="profile-container">
       <a href="">
-          <span className="nav-icons"><FontAwesomeIcon icon={faFlag} /></span>
+          <span className="nav-icons"><FontAwesomeIcon icon={faFlag} size="2x" /></span>
         </a>
       <a href="">
           <span className="nav-icons">Start</span>

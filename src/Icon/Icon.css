@@ -1,0 +1,44 @@
+.card-container {
+display: grid;
+grid-template-columns: repeat(4,auto);
+margin-top: 2rem; 
+}
+
+.card {
+  margin: 20px;
+  border: 2px solid #ededed;
+  border-radius: 10%;
+  padding: 20px;
+  cursor: pointer;
+  text-align: center;
+  width: 80%;
+}
+
+.card:hover{
+  background-color: gold;
+  transition: all 1s;
+}
+
+.card-icon {
+  width: 4rem;
+  margin-bottom: 1rem; 
+  margin-left: 2rem;
+}
+
+.card-icon-title {
+  margin-bottom: 1rem;
+  color: #2C374C;
+  font-weight: lighter;
+  font-size: medium;
+} 
+
+
+
+
+
+
+
+
+
+
+

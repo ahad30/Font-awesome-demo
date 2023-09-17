@@ -1,13 +1,14 @@
 import { useState } from "react";
 
 import Navigation from "./Navigation/Nav";
-import Products from "./Products/Products";
-import products from "./db/data";
+import Icon from "./Icon/Icon";
+import icons from "./db/data";
 import Recommended from "./Recommended/Recommended";
 import Sidebar from "./Sidebar/Sidebar";
 import Card from "./components/Card";
 import "./index.css";
 import "./App.css";
+import Footer from "./Footer/Footer";
 
 function App() {
   const [selectedCategory, setSelectedCategory] = useState(null);
@@ -19,7 +20,7 @@ function App() {
     setQuery(event.target.value);
   };
 
-  const filteredItems = products.filter(
+  const filteredItems =icons.filter(
     (product) => product.title.toLowerCase().indexOf(query.toLowerCase()) !== -1
   );
 
@@ -33,52 +34,47 @@ function App() {
     setSelectedCategory(event.target.value);
   };
 
-  function filteredData(products, selected, query) {
-    let filteredProducts = products;
+  function filteredData(icons, selected, query) {
+    let filteredIcon = icons;
 
     // Filtering Input Items
     if (query) {
-      filteredProducts = filteredItems;
+      filteredIcon = filteredItems;
     }
 
     // Applying selected filter
     if (selected) {
-      filteredProducts = filteredProducts.filter(
-        ({ category, color, company, newPrice, title }) =>
+      filteredIcon = filteredIcon.filter(
+        ({ category, company, title }) =>
           category === selected ||
-          color === selected ||
           company === selected ||
-          newPrice === selected ||
           title === selected
       );
     }
 
-    return filteredProducts.map(
-      ({ img, title, star, reviews, prevPrice, newPrice }) => (
+    return filteredIcon.map(
+      ({ img, title }) => (
         <Card
           key={Math.random()}
           img={img}
           title={title}
-          star={star}
-          reviews={reviews}
-          prevPrice={prevPrice}
-          newPrice={newPrice}
+         
         />
       )
     );
   }
 
-  const result = filteredData(products, selectedCategory, query);
+  const result = filteredData(icons, selectedCategory, query);
 
   return (
     <>
     <Navigation query={query} handleInputChange={handleInputChange} />
     <Recommended handleClick={handleClick} />
-
     <div className="sidebar-icon">
     <div><Sidebar handleChange={handleChange} /></div>
-    <div><Products result={result} /></div>
+    <div><Icon result={result} /></div>
    </div>
+   <Footer/>
     </>
   );
 }

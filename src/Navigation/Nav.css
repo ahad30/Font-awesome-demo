@@ -9,6 +9,7 @@ nav {
   width: 1.5rem;
   height: 1.5rem;
   margin-left: 4rem;
+  color: #2C374C;
 }
 
 .nav-icons:hover{
@@ -19,7 +20,11 @@ nav {
 
 
 .nav-icons-last{
-  margin-left: 23rem;
+  margin-left: 20rem;
+}
+
+.profile-container a{
+  text-decoration: none;
 }
 
 
@@ -39,14 +44,4 @@ nav {
 }
 
 
-#searchQuerySubmit {
-  width: 20px;
-  height: 20px;
-  background: none;
-  border: none;
-  outline: none;
-}
 
-#searchQuerySubmit:hover {
-  cursor: pointer;
-}

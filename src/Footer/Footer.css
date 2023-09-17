@@ -1,0 +1,23 @@
+footer{
+    background-color:rgb(23, 36, 88);
+}
+
+footer .quick-link a{
+text-decoration: none;
+}
+footer .quick-link a:hover{
+    text-decoration: underline;
+}
+.btn-block{
+    width: 100%;
+}
+footer .component a {
+ color: aliceblue; 
+}
+footer .component a:hover{
+ color: rgb(173, 107, 226); 
+} 
+
+h5{
+    font-weight: bold;
+}

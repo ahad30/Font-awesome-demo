@@ -1,6 +1,8 @@
 .recommended {
-  display: flex;
-  margin-left: 20rem;
+  display: grid;
+  margin-left: 5rem;
+  grid-template-columns: repeat(9,auto);
+  margin-bottom: 20px;
 }
 
 .recommended-title {
@@ -8,4 +10,40 @@
   margin-bottom: 20px;
   margin-top: 20px;
   font-size: 20px;
+}
+
+.img{
+  margin-left: 14px;
+  width: 52px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.img:hover{
+  color: rgb(62, 62, 208);
+}
+.side-img{
+  width: 25px;
+  height: 25px;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+button{
+
+}
+
+button:hover{
+color: blue;
+text-decoration: underline;
+}
+
+
+.featured-version{
+  padding: 9px;
+  border: 1px solid rgb(195, 198, 209);
+  border-radius: 0.75em;
+  border-width: 0.125rem;
+  font-size: 15px;
+  margin-top: 22px;
 }
