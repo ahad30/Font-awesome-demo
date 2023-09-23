@@ -29,9 +29,6 @@
   cursor: pointer;
 }
 
-button{
-
-}
 
 button:hover{
 color: blue;
@@ -47,3 +44,20 @@ text-decoration: underline;
   font-size: 15px;
   margin-top: 22px;
 }
+
+@media only screen and (max-width:768px){
+.recommended{
+  grid-template-columns: repeat(3,1fr);
+}
+
+.side-img{
+  margin-left: 2rem;
+}
+
+.featured-version{
+padding: 7px;
+font-size: 14px;
+  
+}
+}
+ 

@@ -114,3 +114,13 @@
 }
 
 
+@media only screen and (max-width:768px){
+  .sidebar{
+  margin-left: 8rem;
+  margin-top: 3rem; 
+}
+
+.sidebar-title{
+  margin-left: 5rem;
+}
+} 

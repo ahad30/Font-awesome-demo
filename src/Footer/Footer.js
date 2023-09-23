@@ -87,13 +87,11 @@ const Footer = () => {
                 <a href="#" class=" text-decoration-none me-3 ">
                   Support
                 </a>
-
               </div>
               <div className='mb-2'>
                 <a href="#" class=" text-decoration-none me-3 ">
                   Trouble Shooting
                 </a>
-
               </div>
               <div className='mb-2'>
                 <a href="#" class=" text-decoration-none me-3 ">

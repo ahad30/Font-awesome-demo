@@ -1,10 +1,17 @@
-import React from "react";
+import React, { useState } from 'react';
 import "./Nav.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import { faFlag } from '@fortawesome/free-solid-svg-icons';
-import { faRightFromBracket } from '@fortawesome/free-solid-svg-icons';
+import { faRightFromBracket , faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 const Nav = ({ handleInputChange, query }) => {
+  // const [isOpen, setIsOpen] = useState(false);
+
+  // const toggleNavbar = () => {
+  //   setIsOpen(!isOpen);
+  // };
+
+
   return (
     <>
     <nav>
@@ -40,7 +47,6 @@ const Nav = ({ handleInputChange, query }) => {
     </nav>
     <div className="wrapper">
     <div className="searchBar ">
-    {/* <FontAwesomeIcon  icon={faMagnifyingGlass} size="2x" className="" /> */}
     <input
       className="search-input"
       type="text"
