@@ -42,8 +42,19 @@ margin-top: 2rem;
   margin-left: 2.7rem;
 }
 
-
 } 
+
+
+@media only screen and (min-width:820px) and (max-width:950px){
+  .card-container{
+    grid-template-columns: repeat(3,1fr);
+}
+  
+  
+  .card-icon{
+    margin-left: 1.4rem;
+  }
+}
 
 
 

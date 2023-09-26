@@ -11,7 +11,7 @@ const Footer = () => {
           <div class="row pt-5">
             <div class="col-12 col-md-6">
               <div>
-                <h4 class="fa fa-flag mb-3 "></h4>
+                <h4 class="fa fa-flag mb-3 text-white"></h4>
               </div>
               <h5 className='text-white fw-bold mb-4'>Go make something awesome</h5>
               <p class="text-white">
